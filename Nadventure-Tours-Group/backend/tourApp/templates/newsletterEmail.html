@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 180px;
+            height: auto;
+        }
+        h2 {
+            color: #28a745;
+            text-align: center;
+        }
+        ul {
+            margin-top: 10px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn-secondary {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888888;
+            text-align: center;
+        }
+        .social-icons img {
+            width: 24px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.checkfront.com/wp-content/uploads/2022/05/img_62745820cd04c.jpg" alt="Tour & Travel Logo" />
+        </div>
+        <h2>Welcome to Our Monthly Newsletter! 🌍</h2>
+        <p>Hello {{subscriber.name}} 👋,</p>
+        <p>Thanks for subscribing! Here's what you can look forward to every month:</p>
+        <ul>
+            <li>🐘 Fascinating stories and facts about African wildlife.</li>
+            <li>🎭 Cultural highlights from various communities across the region.</li>
+            <li>🌿 Updates on environment conservation efforts and how you can help.</li>
+            <li>🥾 Hand-picked hiking destinations for both short and long trips.</li>
+        </ul>
+        <p>Stay tuned and inspired!</p>
+        <p>The Tour & Travel Team 🧭</p>
+        
+
+        <p style="text-align: center; background-color: #007bff;">
+            <a href="https://yourdomain.com/opportunities" class="btn-secondary">Unsubscribe</a>
+        </p>
+        <div class="footer">
+            <p>Kind regards,<br>The Tour & Travel Team</p>
+            <div class="social-icons">
+                <a href="https://facebook.com"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram"></a>
+           
+            If you didn’t subscribe to this newsletter, please ignore this email.
+        </div>
+    </div>
+</body>
+</html>

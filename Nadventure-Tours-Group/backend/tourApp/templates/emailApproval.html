@@ -1,0 +1,96 @@
+<!-- templates/emails/approval_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Guide Approval Email</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        .email-wrapper {
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .brand-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .brand-header img {
+            max-width: 280px;
+            max-height: 100px;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .cta-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888888;
+            text-align: center;
+        }
+        .social-icons img {
+            width: 24px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="container">
+            <!-- Brand Header -->
+            <div class="brand-header">
+                <img src="https://www.checkfront.com/wp-content/uploads/2022/05/img_62745820cd04c.jpg" alt="Tour & Travel Logo">
+            </div>
+
+            <!-- Main Body -->
+            <h2>Hello {{ guide.first_name }} 👋</h2>
+            <p>We’re thrilled to let you know that your application as a guide has been <strong>approved</strong>! 🥳</p>
+            <p>You can now log in to your account and begin your journey with us. Help travelers explore the world with your expertise.</p>
+
+            <!-- CTA Button -->
+            <p style="text-align: center;">
+                <a href="https://yourdomain.com/login" class="cta-button">Login to Your Account</a>
+            </p>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Thanks,<br>The Tour & Travel Team</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram"></a>
+                </div>
+                <p>&copy; 2025 Tour & Travel Co. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!-- templates/emails/rejection_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Guide Application Update</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        .email-wrapper {
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .brand-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .brand-header img {
+            max-width: 180px;
+        }
+        h2 {
+            color: #ff4c4c;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #888888;
+            text-align: center;
+        }
+        .social-icons img {
+            width: 24px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+        .btn-secondary {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="container">
+            <!-- Brand Header -->
+            <div class="brand-header">
+                <img src="https://www.checkfront.com/wp-content/uploads/2022/05/img_62745820cd04c.jpg" alt="Tour & Travel Logo">
+            </div>
+
+            <!-- Message -->
+            <h2>Hello {{ guide.first_name }},</h2>
+            <p>Thank you for applying to become a guide with us at <strong>Tour & Travel</strong>.</p>
+            <p>After careful review of your application, we regret to inform you that we are unable to proceed with your request at this time.</p>
+            <p>We appreciate the time and effort you put into your application and encourage you to explore other opportunities with us in the future.</p>
+
+            <!-- Optional CTA -->
+            <p style="text-align: center;">
+                <a href="https://yourdomain.com/opportunities" class="btn-secondary">Explore More Opportunities</a>
+            </p>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Kind regards,<br>The Tour & Travel Team</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><img src="https://img.icons8.com/color/48/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram"></a>
+                </div>
+                <p>&copy; 2025 Tour & Travel Co. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
