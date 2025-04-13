@@ -55,32 +55,33 @@
 
 ### 🔧 Backend (Django)
 
-```bash
+1. 
+  ```bash
 # Clone the repo
 git clone https://github.com/yourusername/nadventure.git
 cd nadventure/backend
 
-# Create virtual environment
+2. # Create virtual environment
 python -m venv env
 source env/bin/activate  # On Windows: env\Scripts\activate
 
-# Install dependencies
+3. # Install dependencies
 pip install -r requirements.txt
 
-# Run migrations & start server
+4. # Run migrations & start server
 python manage.py migrate
 python manage.py runserver
 
 
-☁️ Deploying with Terraform on Azure
+5. # ☁️ Deploying with Terraform on Azure
 You’ll need: Azure CLI, Terraform CLI, and an Azure account.
 
 📂 Navigate to Infrastructure Directory
 
-```bash
+i ```bash
 cd infra/terraform
 
-🏗️ Initialize & Deploy
+1. # 🏗️ Initialize & Deploy
 ```bash
 # Initialize Terraform
 terraform init
@@ -91,4 +92,4 @@ terraform plan
 # Apply infrastructure to Azure
 terraform apply
 
-!(./frontend/tour.jpeg)
+!(./screenshot/tour.jpeg)
