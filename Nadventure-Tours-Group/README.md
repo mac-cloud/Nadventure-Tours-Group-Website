@@ -1,7 +1,8 @@
 # 🏞️ Nadventure – Full-Stack Tour Company Web App with Cloud Deployment
 
 
-!(/home/mac-aphid/Desktop/tour-travel-app/Nadventure-Tours-Group/screenshot/tour.jpeg)
+![Homepage](./screenshot/tour.jpeg)
+
 
 
 **Nadventure** is a full-stack web application built for a tour and travel company, allowing users to explore destinations, book tours, and interact through a smooth, responsive interface. The backend is powered by **Django REST Framework**, the frontend is built with **React**, and the entire infrastructure is deployed on **Microsoft Azure** using **Terraform (Infrastructure as Code)**.
