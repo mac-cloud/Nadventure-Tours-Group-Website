@@ -51,9 +51,6 @@
 
 ---
 
-## 📁 Project Structure
-
-
 ---
 
 ## 📦 Setup & Installation
@@ -66,37 +63,3 @@
 git clone https://github.com/yourusername/nadventure.git
 cd nadventure/backend
 
-2. # Create virtual environment
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-
-3. # Install dependencies
-pip install -r requirements.txt
-
-4. # Run migrations & start server
-python manage.py migrate
-python manage.py runserver
-
-
-5. # ☁️ Deploying with Terraform on Azure
-You’ll need: Azure CLI, Terraform CLI, and an Azure account.
-
-📂 Navigate to Infrastructure Directory
-
-i ```bash
-cd infra/terraform
-
-1. # 🏗️ Initialize & Deploy
-```bash
-# Initialize Terraform
-terraform init
-
-# Preview changes
-terraform plan
-
-# Apply infrastructure to Azure
-terraform apply
-
-
-
-!(/home/mac-aphid/Desktop/tour-travel-app/Nadventure-Tours-Group/screenshot/tour.jpeg)
