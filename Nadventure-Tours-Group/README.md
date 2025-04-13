@@ -63,22 +63,28 @@
 git clone https://github.com/yourusername/nadventure.git
 cd nadventure/backend
 
+
 2. 
   ```bash
 # Create virtual environment
 python -m venv env
 source env/bin/activate  # On Windows: env\Scripts\activate
 
+
+
 3. 
   ```bash
 # Install dependencies
 pip install -r requirements.txt
+
+
 
 4. 
   ```bash
 # Run migrations & start server
 python manage.py migrate
 python manage.py runserver
+
 
 
 5. 
