@@ -17,6 +17,12 @@ resource "azurerm_service_plan" "app_plan" {
   resource_group_name = azurerm_resource_group.main.name
   os_type                = "Linux"
   sku_name         = "S1"
+   timeouts {
+    create = "2h"
+    update = "2h"
+    delete = "2h"
+  }
   
 }
 
+ 
