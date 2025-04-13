@@ -63,3 +63,43 @@
 git clone https://github.com/yourusername/nadventure.git
 cd nadventure/backend
 
+2. 
+  ```bash
+# Create virtual environment
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+
+3. 
+  ```bash
+# Install dependencies
+pip install -r requirements.txt
+
+4. 
+  ```bash
+# Run migrations & start server
+python manage.py migrate
+python manage.py runserver
+
+
+5. 
+  ```bash
+# ☁️ Deploying with Terraform on Azure
+You’ll need: Azure CLI, Terraform CLI, and an Azure account.
+
+📂 Navigate to Infrastructure Directory
+
+cd infra/terraform
+
+1. # 🏗️ Initialize & Deploy
+
+# Initialize Terraform
+terraform init
+
+# Preview changes
+terraform plan
+
+# Apply infrastructure to Azure
+terraform apply
+
+
+
