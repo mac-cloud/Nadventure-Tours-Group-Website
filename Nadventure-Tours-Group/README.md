@@ -65,7 +65,7 @@ cd nadventure/backend
 
 
 2. 
-  ```bash
+   ```bash
 # Create virtual environment
 python -m venv env
 source env/bin/activate  # On Windows: env\Scripts\activate
