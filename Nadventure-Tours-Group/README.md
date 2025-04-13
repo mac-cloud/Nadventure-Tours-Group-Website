@@ -92,4 +92,6 @@ terraform plan
 # Apply infrastructure to Azure
 terraform apply
 
-!(./screenshot/tour.jpeg)
+
+
+!(/home/mac-aphid/Desktop/tour-travel-app/Nadventure-Tours-Group/screenshot/tour.jpeg)
